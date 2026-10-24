@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#031e1c">
+  <meta name="description" content="VIEST – Gìn giữ bản sắc Việt, lan tỏa giá trị yêu nước qua di sản, lịch sử và các anh hùng dân tộc.">
+  <title>VIEST – Gìn giữ bản sắc Việt</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="mobile-menu icon-btn" id="mobileMenu" aria-label="Mở menu">☰</button>
+      <a class="brand" href="#home" aria-label="VIEST trang chủ">
+        <img class="brand-logo" src="assets/vietism-logo.png" alt="VIEST – Gìn giữ bản sắc Việt và lan tỏa giá trị yêu nước">
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="nav-link active" data-page="home">Trang chủ</a>
+        <a href="#history" class="nav-link" data-page="history">Dòng chảy Việt Nam</a>
+        <a href="#culture" class="nav-link" data-page="culture">Văn hóa – Di sản</a>
+        <a href="#society" class="nav-link" data-page="society">Xã hội hôm nay</a>
+        <a href="#travel" class="nav-link" data-page="travel">Du lịch & Trải nghiệm</a>
+        <a href="#quest" class="nav-link" data-page="quest">Săn kho báu</a>
+        <a href="#map" class="nav-link" data-page="map">Bản đồ khám phá</a>
+        <a href="#community" class="nav-link" data-page="community">Cộng đồng</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Tìm kiếm trên VIEST" aria-expanded="false" aria-controls="globalSearchPanel">⌕</button>
+        <a class="login-btn" href="#auth">Đăng nhập</a>
+      </div>
+    </header>
+    <section class="global-search-panel hidden" id="globalSearchPanel" aria-label="Tìm kiếm toàn website">
+      <div class="global-search-form"><label for="globalSearchInput">Tìm trong câu chuyện, địa danh và nhân vật</label><div><input id="globalSearchInput" type="search" placeholder="Thử: Hội An, Bạch Đằng, Nguyễn Trãi…"><button type="button" class="global-search-close" id="globalSearchClose" aria-label="Đóng tìm kiếm">×</button></div></div>
+      <div id="globalSearchResults" class="global-search-results" aria-live="polite"><p class="muted">Nhập từ khóa để khám phá toàn bộ thư viện VIEST.</p></div>
+    </section>
+
+    <main>
+      <section class="page active" id="page-home" data-page="home">
+        <div class="hero home-hero">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <div class="eyebrow"><span></span> MỘT HÀNH TRÌNH · NGÀN CÂU CHUYỆN</div>
+            <h1>VIEST<br><em>Gìn giữ bản sắc Việt</em><br>Lan tỏa giá trị yêu nước</h1>
+            <p>Khám phá di sản, lịch sử và những câu chuyện truyền cảm hứng về đất nước Việt Nam qua những trải nghiệm tương tác hiện đại.</p>
+            <a class="btn btn-gold" href="#quest">Bắt đầu hành trình săn kho báu <span>↗</span></a>
+          </div>
+          <div class="visitor-card"><small>✦ Lượt truy cập</small><strong id="visitorCount">—</strong><span>cùng tìm hiểu Việt Nam</span></div>
+        </div>
+
+        <div class="quick-grid">
+          <a href="#history" class="quick-card"><span>♜</span><b>Lịch sử<br>Việt Nam</b></a>
+          <a href="#culture" class="quick-card"><span>♧</span><b>Văn hóa –<br>Di sản</b></a>
+          <a href="#society" class="quick-card"><span>◉</span><b>Xã hội<br>hôm nay</b></a>
+          <a href="#travel" class="quick-card"><span>⌖</span><b>Du lịch &<br>trải nghiệm</b></a>
+          <a href="#map" class="quick-card"><span>▦</span><b>Bản đồ<br>khám phá</b></a>
+          <a href="#events" class="quick-card"><span>✦</span><b>Sự kiện &<br>hoạt động</b></a>
+          <a href="#community" class="quick-card"><span>✉</span><b>Cộng đồng<br>VIEST</b></a>
+          <a href="#quest" class="quick-card quick-card-featured"><span>⚑</span><b>Săn kho báu<br>Đà Nẵng</b></a>
+        </div>
+
+        <section class="home-discovery">
+          <article class="discovery-feature discovery-feature-main">
+            <div class="discovery-overlay"><span class="eyebrow">ĐIỂM NHẤN VIEST · 01</span><h2>Việt Nam, mở ra qua từng tọa độ</h2><p>Khám phá những di sản, thành quách và câu chuyện được gìn giữ qua nhiều thế hệ.</p><a class="btn btn-gold" href="#heritage">Mở bản đồ di sản →</a></div>
+          </article>
+          <div class="discovery-side">
+            <article class="discovery-feature discovery-feature-quest"><div class="discovery-overlay"><span class="eyebrow">TRẢI NGHIỆM TƯƠNG TÁC</span><h2>Giải mật thư Đà Nẵng</h2><p>5 địa điểm · 5 manh mối · 1 bí mật lịch sử.</p><a class="text-link" href="#quest">Bắt đầu hành trình →</a></div></article>
+            <article class="discovery-stat-card"><span class="eyebrow">THƯ VIỆN KHÁM PHÁ</span><div><strong id="homePlaceCount">20</strong><span>địa danh tiêu biểu</span></div><div><strong id="homeArticleCount">—</strong><span>bài đọc nhiều chủ đề</span></div><a href="#culture">Tìm câu chuyện bạn yêu thích →</a></article>
+          </div>
+        </section>
+        <section class="home-reading-section">
+          <div class="home-reading-heading"><div><span class="eyebrow">ĐỌC · KHÁM PHÁ · KẾT NỐI</span><h2>Mở một câu chuyện, bắt đầu một hành trình</h2><p>Bài viết về di sản, lịch sử, đời sống và trải nghiệm được biên tập để bạn có thêm điều đáng đọc sau mỗi lần ghé thăm.</p></div><a class="text-link" href="#history">Mở thư viện bài đọc →</a></div>
+          <div id="homeReadingGrid" class="editorial-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="home-history-block">
+          <div class="home-history-copy"><span class="eyebrow">LỊCH SỬ · BẢN SẮC · LÒNG TỰ HÀO</span><h2>Hiểu lịch sử để trân trọng hiện tại</h2>
+          <p>Lịch sử Việt Nam là hành trình dựng nước, giữ nước và giao thoa văn hóa qua nhiều thế hệ. Từ các nhà nước cổ đại, những triều đại độc lập, các cuộc đấu tranh giành tự chủ đến công cuộc xây dựng đất nước hôm nay, mỗi dấu mốc đều góp phần tạo nên bản sắc Việt.</p>
+          <p>VIEST là không gian học tập số giúp người dùng tiếp cận di sản, nhân vật và sự kiện lịch sử bằng nội dung ngắn gọn, câu hỏi tương tác và bản đồ khám phá. Thông tin trong dự án cần được đối chiếu với nguồn đáng tin cậy trước khi sử dụng cho học tập hoặc nghiên cứu.</p></div>
+          <div class="home-history-timeline"><div><b>01</b><span><strong>Dựng nước</strong><small>Truyền thống, văn hóa và các nhà nước đầu tiên.</small></span></div><div><b>02</b><span><strong>Giữ nước</strong><small>Những dấu mốc đấu tranh bảo vệ độc lập.</small></span></div><div><b>03</b><span><strong>Phát triển</strong><small>Di sản và bản sắc tiếp tục được gìn giữ hôm nay.</small></span></div></div>
+        </section>
+        <section class="howto-block"><div><span class="eyebrow">BẮT ĐẦU TRONG VÀI BƯỚC</span><h2>Bắt đầu cùng VIEST</h2><p>Chọn một hành trình phù hợp với mục tiêu học tập của bạn.</p></div><div class="howto-grid"><article><span>01</span><h3>Khám phá di sản</h3><p>Tìm địa danh, mở hồ sơ riêng, đọc nội dung và xem nguồn tham khảo.</p><a href="#heritage">Mở thư viện →</a></article><article><span>02</span><h3>Học qua thử thách</h3><p>Chọn bắt đầu để nhận bộ câu hỏi ngẫu nhiên, độ khó trung bình và nâng cao. Có thể làm lại để học nội dung mới.</p><a href="#quiz">Làm bài kiểm tra →</a></article><article><span>03</span><h3>Tra cứu bản đồ</h3><p>Dùng số thứ tự và danh mục địa danh để tìm vị trí tương ứng, bao gồm Hoàng Sa và Trường Sa.</p><a href="#map">Mở bản đồ →</a></article><article><span>04</span><h3>Đọc và đóng góp</h3><p>Đọc bài lịch sử, tìm hiểu anh hùng, gửi đánh giá, bình luận hoặc phản hồi cho nhóm.</p><a href="#members">Kết nối nhóm →</a></article></div></section>
+        <section class="about-vie-story">
+          <div class="about-vie-copy"><span class="eyebrow">VIEST · VIETNAM STORIES</span><h2>Một bản đồ sống của những câu chuyện Việt</h2><p>VIEST kết nối lịch sử, di sản và đời sống đương đại thành những trải nghiệm dễ khám phá — từ một bài đọc ngắn, bản đồ địa danh đến thử thách nhập vai ngoài đời.</p><p>Chúng tôi tin rằng học lịch sử sẽ gần gũi hơn khi người chơi được đặt câu hỏi, lần theo manh mối và tự tìm ra ý nghĩa phía sau mỗi địa điểm.</p><a class="btn btn-outline" href="#members">Gặp đội ngũ VIEST →</a></div>
+          <div class="about-vie-pillars"><article><b>01 · TÌM HIỂU</b><h3>Đọc có ngữ cảnh</h3><p>Mỗi câu chuyện gắn với địa danh, thời gian và nguồn tham khảo để tiếp tục tra cứu.</p></article><article><b>02 · TRẢI NGHIỆM</b><h3>Học bằng khám phá</h3><p>Bản đồ, câu đố và hành trình giúp kiến thức trở thành một cuộc phiêu lưu.</p></article><article><b>03 · KẾT NỐI</b><h3>Chia sẻ có trách nhiệm</h3><p>Tôn trọng cộng đồng địa phương, di tích và sự khác biệt của các vùng miền.</p></article></div>
+        </section>
+      </section>
+
+      <section class="page" id="page-quest" data-page="quest">
+        <div class="quest-hero"><span class="eyebrow">VIEST ORIGINAL · ĐÀ NẴNG</span><h1>Mật thư của <em>người giữ ký ức</em></h1><p>Một chuyến đi qua năm địa điểm có thật. Giải câu đố ở mỗi chặng, nhận một mảnh mật thư và tìm ra kho báu cuối cùng.</p><div class="quest-meta"><span>⌖ 5 địa điểm</span><span>◷ Gợi ý lịch trình một ngày</span><span>✦ Chơi miễn phí</span></div></div>
+        <div class="quest-layout"><section class="quest-play-panel" id="questPlay" aria-live="polite"></section><aside class="quest-sidebar"><span class="eyebrow">HÀNH TRÌNH CỦA BẠN</span><h2>Năm dấu mốc</h2><div id="questProgress" class="quest-progress-list"></div><div class="quest-note"><b>Lưu ý trước khi đi</b><p>Đây là trò chơi hư cấu dựa trên địa danh và bối cảnh lịch sử có thật; không có cổ vật hay vật phẩm nào được chôn giấu. Hãy chỉ tham quan khu vực mở cửa, tuân thủ biển báo và không xâm nhập/cạy phá di tích.</p></div><a class="btn btn-outline full" href="#map">Mở bản đồ VIEST →</a><button class="btn btn-outline full" type="button" id="questReset">Làm lại từ đầu ↻</button></aside></div>
+      </section>
+
+      <section class="page" id="page-heritage" data-page="heritage">
+        <div class="page-heading"><div><span class="eyebrow">KHO TÀNG VĂN HÓA</span><h1>Khám phá di sản Việt Nam</h1><p>Hành trình tìm hiểu những di sản văn hóa, lịch sử và thiên nhiên độc đáo của đất nước.</p></div></div>
+        <div class="search-row"><input id="heritageSearch" placeholder="Tìm kiếm địa danh, di tích, di sản..." aria-label="Tìm di sản"><button class="btn btn-gold" id="heritageSearchBtn">Tìm kiếm ⌕</button></div>
+        <div class="filter-row">
+          <select id="regionFilter" aria-label="Lọc vùng miền"><option value="all">Tất cả vùng miền</option><option>Miền Bắc</option><option>Miền Trung</option><option>Miền Nam</option></select>
+          <select id="typeFilter" aria-label="Lọc loại hình"><option value="all">Tất cả loại hình</option><option>Di tích lịch sử</option><option>Di sản thiên nhiên</option><option>Di sản văn hóa</option></select>
+          <select id="provinceFilter" aria-label="Lọc tỉnh/thành phố"><option value="all">Tất cả tỉnh/thành phố</option></select>
+        </div>
+        <div class="content-with-side">
+          <aside class="filter-panel"><h3>Bộ lọc khám phá</h3><p class="muted">Vùng miền</p><label><input type="radio" name="regionRadio" value="all" checked> Tất cả địa phương</label><label><input type="radio" name="regionRadio" value="Miền Bắc"> Miền Bắc</label><label><input type="radio" name="regionRadio" value="Miền Trung"> Miền Trung</label><label><input type="radio" name="regionRadio" value="Miền Nam"> Miền Nam</label><hr><p class="muted">Loại hình di sản</p><label><input type="checkbox" class="typeCheck" value="Di tích lịch sử"> Di tích lịch sử</label><label><input type="checkbox" class="typeCheck" value="Di sản thiên nhiên"> Di sản thiên nhiên</label><label><input type="checkbox" class="typeCheck" value="Di sản văn hóa"> Di sản văn hóa</label><button class="btn btn-outline full" id="clearFilters">Xóa bộ lọc</button></aside>
+          <div class="results-area"><div class="section-top"><h2>Địa danh dành cho bạn</h2><span class="muted" id="heritageCount">20 địa danh</span></div><div class="card-grid" id="heritageGrid"></div></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-place" data-page="place"><div id="placeDetailPage"></div></section>
+
+      <section class="page" id="page-map" data-page="map">
+        <div class="page-heading"><div><span class="eyebrow">TỪ BẮC VÀO NAM</span><h1>Bản đồ du lịch Việt Nam</h1><p>Chọn một địa danh trên bản đồ sơ đồ để xem thông tin nhanh và mở chi tiết.</p></div></div>
+        <div class="map-layout">
+          <aside class="map-sidebar"><input id="mapSearch" placeholder="⌕  Tìm địa điểm, tỉnh thành..."><h3>Danh mục</h3><div class="map-legend"><span>🟡</span> Di tích lịch sử</div><div class="map-legend"><span>🟢</span> Di sản thiên nhiên</div><div class="map-legend"><span>🔵</span> Di sản văn hóa</div><hr><h3>Tỉnh/Thành phố</h3><div id="mapPlaceList" class="map-place-list"></div></aside>
+          <div class="map-stage"><div class="map-watermark">VIỆT NAM</div><svg class="vn-map" viewBox="0 0 440 650" role="img" aria-label="Bản đồ sơ đồ Việt Nam"><path class="map-land" d="M100 25 L155 48 L176 78 L151 104 L174 126 L158 153 L195 178 L185 207 L224 238 L214 265 L246 295 L231 324 L255 351 L240 379 L260 409 L239 436 L246 465 L220 494 L211 526 L184 550 L173 580 L145 600 L132 574 L150 544 L151 513 L168 487 L170 457 L190 432 L176 405 L187 378 L165 354 L174 329 L148 304 L160 279 L139 253 L146 226 L126 203 L137 177 L119 151 L129 128 L108 104 L118 82 L92 57 Z"/></svg><div id="mapPins" class="map-pins"></div><div class="map-caption">Bản đồ sơ đồ tương tác · Số trên bản đồ khớp với danh mục bên trái; có Hoàng Sa và Trường Sa</div></div>
+          <aside class="map-detail" id="mapDetail"><span class="eyebrow">ĐỊA ĐIỂM ĐƯỢC CHỌN</span><h2>Vịnh Hạ Long</h2><p>Quảng Ninh · Miền Bắc</p><div class="detail-photo" style="background-image:url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=900&q=85')"></div><p>Vùng biển nổi tiếng với hàng nghìn đảo đá vôi và cảnh quan thiên nhiên kỳ vĩ.</p><a class="btn btn-gold" href="#heritage">Xem danh sách di sản →</a></aside>
+        </div>
+      </section>
+
+      <section class="page" id="page-quiz" data-page="quiz">
+        <div class="quiz-hero"><div><span class="eyebrow">VIEST · HỌC MÀ CHƠI</span><h1>Thử thách kiến thức</h1><p>Khám phá hiểu biết của bạn về lịch sử, văn hóa và di sản Việt Nam.</p><div class="quiz-start-actions"><label class="difficulty-select">Độ khó<select id="difficultySelect"><option value="medium">Trung bình</option><option value="hard">Nâng cao</option><option value="mixed" selected>Kết hợp</option></select></label><button class="btn btn-gold" id="startQuiz">Bắt đầu thử thách →</button><button class="btn btn-outline" id="resetQuiz">Đặt lại / Bộ câu hỏi mới ↻</button></div></div></div>
+        <div class="quiz-layout"><div class="quiz-main"><div class="quiz-progress"><span id="quizStep">Câu 1/8</span><div><i id="quizProgressBar"></i></div><span id="quizTimer">∞</span></div><h2 id="quizQuestion">Di sản nào dưới đây thuộc tỉnh Quảng Ninh?</h2><div id="quizAnswers" class="answer-list"></div><div class="quiz-controls"><button class="btn btn-outline" id="prevQuestion">← Trước</button><button class="btn btn-gold" id="nextQuestion">Tiếp theo →</button></div><div id="quizFeedback" class="quiz-feedback" aria-live="polite"></div></div><aside class="quiz-side"><h3>Hành trình tri thức</h3><div class="quiz-stat"><strong id="quizScore">0</strong><span>điểm hiện tại</span></div><p class="muted">Trả lời câu hỏi để mở khóa thêm kiến thức thú vị.</p><div class="rank-mini"><span>🥇</span><div><b>Người khám phá</b><small>Hãy thử thách chính mình</small></div></div><div class="rank-mini"><span>🏅</span><div><b>Người giữ gìn di sản</b><small>Danh hiệu đang chờ bạn</small></div></div></aside></div>
+      </section>
+
+      <section class="page" id="page-history" data-page="history">
+        <div class="page-heading"><div><span class="eyebrow">DÒNG CHẢY KÝ ỨC</span><h1>Góc lịch sử</h1><p>Những dấu mốc và câu chuyện góp phần tạo nên hình hài Việt Nam hôm nay.</p></div></div>
+        <div class="history-layout"><aside class="filter-panel history-filter"><h3>Chủ đề</h3><button class="side-filter active" data-history="all">◉ Tất cả</button><button class="side-filter" data-history="Kháng chiến">◉ Kháng chiến</button><button class="side-filter" data-history="Triều đại">◉ Triều đại</button><button class="side-filter" data-history="Văn hóa">◉ Văn hóa – truyền thống</button><button class="side-filter" data-history="Nhân vật">◉ Nhân vật lịch sử</button></aside><div class="history-main" id="historyList"></div></div>
+      </section>
+
+      <section class="page" id="page-heroes" data-page="heroes">
+        <div class="page-heading"><div><span class="eyebrow">NHỮNG CON NGƯỜI LÀM NÊN LỊCH SỬ</span><h1>Các Anh Hùng Lịch Sử</h1><p>Tôn vinh những con người đã cống hiến, bảo vệ và xây dựng đất nước.</p></div></div>
+        <div class="search-row"><input id="heroSearch" placeholder="Tìm kiếm anh hùng, triều đại, dấu mốc..."><button class="btn btn-gold" id="heroSearchBtn">Tìm kiếm ⌕</button></div>
+        <div class="filter-row" id="heroFilters"><button class="chip active" data-hero="all">Tất cả</button><button class="chip" data-hero="Khởi nghĩa">Khởi nghĩa</button><button class="chip" data-hero="Kháng chiến">Kháng chiến</button><button class="chip" data-hero="Triều đại">Triều đại</button><button class="chip" data-hero="Hiện đại">Hiện đại</button></div>
+        <div class="hero-card-grid" id="heroGrid"></div>
+      </section>
+
+      <section class="page" id="page-members" data-page="members">
+        <div class="members-banner"><span class="eyebrow">NHỮNG NGƯỜI KỂ CHUYỆN VIỆT</span><h1>Đội ngũ VIEST</h1><p>Cùng nhau lan tỏa những giá trị tốt đẹp của Việt Nam.</p></div>
+        <div class="member-grid">
+          <article class="member-card"><div class="avatar avatar-one">HT</div><h3>Gia Huy Tăng</h3><span class="role">Trưởng nhóm</span><p>Lên ý tưởng, định hướng nội dung và điều phối dự án.</p></article>
+          <article class="member-card"><div class="avatar avatar-two">MA</div><h3>Minh Anh</h3><span class="role">Lập trình viên</span><p>Phát triển giao diện, xây dựng tính năng và tối ưu trải nghiệm.</p></article>
+          <article class="member-card"><div class="avatar avatar-three">BN</div><h3>Bảo Ngọc</h3><span class="role">Thiết kế & nội dung</span><p>Thiết kế giao diện, tìm hiểu tư liệu và kiểm tra nội dung.</p></article>
+          <article class="member-card"><div class="avatar avatar-four">TK</div><h3>Tuấn Kiệt</h3><span class="role">Nội dung</span><p>Biên soạn tư liệu, kiểm chứng thông tin và viết bài.</p></article>
+        </div>
+        <div class="contact-panel"><div><span class="eyebrow">KẾT NỐI VỚI CHÚNG TÔI</span><h2>Cùng nhau lan tỏa giá trị Việt</h2><p>Góp ý nội dung, đề xuất địa danh hoặc đồng hành cùng dự án.</p></div><form id="contactForm"><input required type="text" placeholder="Tên của bạn"><input required type="email" placeholder="Email liên hệ"><textarea required placeholder="Lời nhắn của bạn"></textarea><button class="btn btn-gold" type="submit">Gửi lời nhắn →</button><p class="form-message" id="contactMessage"></p></form></div>
+      </section>
+
+      <section class="page" id="page-community" data-page="community">
+        <div class="page-heading"><div><span class="eyebrow">CHIA SẺ NIỀM TỰ HÀO</span><h1>Cộng đồng VIEST</h1><p>Nơi chia sẻ câu chuyện, trải nghiệm và góc nhìn về văn hóa Việt Nam.</p></div></div>
+        <div class="community-compose"><div class="avatar avatar-two">B</div><textarea id="postText" placeholder="Bạn muốn chia sẻ điều gì về Việt Nam?"></textarea><button class="btn btn-gold" id="publishPost">Đăng bài ✦</button></div>
+        <div class="community-layout"><aside class="filter-panel"><h3>Danh mục</h3><button class="side-filter active">◉ Tất cả</button><button class="side-filter">◉ Di sản</button><button class="side-filter">◉ Văn hóa</button><button class="side-filter">◉ Ẩm thực</button><button class="side-filter">◉ Lịch sử</button></aside><div class="post-list" id="postList"></div></div>
+      </section>
+
+      <section class="page editorial-page" id="page-culture" data-page="culture"><div class="editorial-hero culture-hero"><span class="eyebrow">BẢN SẮC · DI SẢN · ĐỜI SỐNG</span><h1>Văn hóa – Di sản</h1><p>Khám phá những giá trị được gìn giữ qua kiến trúc, làng nghề, ẩm thực, lễ hội và phong tục của các vùng miền.</p></div><div class="editorial-toolbar"><input id="cultureSearch" placeholder="Tìm làng nghề, phong tục, di sản..."><select id="cultureFilter"><option value="all">Tất cả chủ đề</option><option value="Di sản">Di sản</option><option value="Làng nghề">Làng nghề</option><option value="Ẩm thực">Ẩm thực</option><option value="Lễ hội">Lễ hội</option><option value="Nghệ thuật">Nghệ thuật</option><option value="Phong tục">Phong tục</option></select></div><div class="editorial-grid" id="cultureGrid"></div></section>
+      <section class="page editorial-page" id="page-society" data-page="society"><div class="editorial-hero society-hero"><span class="eyebrow">CON NGƯỜI · XU HƯỚNG · GÓC NHÌN</span><h1>Việt Nam hôm nay</h1><p>Nhìn những thay đổi trong đời sống, thế hệ trẻ, môi trường, công nghệ và cách truyền thống tiếp tục sống trong xã hội hiện đại.</p></div><div class="editorial-toolbar"><input id="societySearch" placeholder="Tìm chủ đề xã hội..."><select id="societyFilter"><option value="all">Tất cả chủ đề</option><option value="Giới trẻ">Giới trẻ</option><option value="Công nghệ">Công nghệ</option><option value="Môi trường">Môi trường</option><option value="Đời sống">Đời sống</option></select></div><div class="editorial-grid" id="societyGrid"></div><p class="editorial-note">VIEST phân biệt dữ kiện, phân tích và ý kiến cá nhân; các bài về vấn đề đang diễn ra cần ghi rõ nguồn và thời điểm cập nhật.</p></section>
+      <section class="page editorial-page" id="page-travel" data-page="travel"><div class="editorial-hero travel-hero"><span class="eyebrow">ĐI ĐỂ HIỂU · KHÁM PHÁ ĐỂ KẾT NỐI</span><h1>Du lịch & Trải nghiệm</h1><p>Hành trình thực tế kết nối địa điểm, câu chuyện lịch sử, văn hóa địa phương và những điều nên biết trước khi lên đường.</p></div><div class="editorial-toolbar"><input id="travelSearch" placeholder="Tìm địa điểm hoặc hành trình..."><select id="travelFilter"><option value="all">Tất cả trải nghiệm</option><option value="Lịch sử">Lịch sử</option><option value="Thiên nhiên">Thiên nhiên</option><option value="Ẩm thực">Ẩm thực</option><option value="Làng nghề">Làng nghề</option></select></div><div class="editorial-grid" id="travelGrid"></div></section>
+      <section class="page editorial-page" id="page-events" data-page="events"><div class="editorial-hero events-hero"><span class="eyebrow">LỊCH TRÌNH · LỄ HỘI · HOẠT ĐỘNG CỘNG ĐỒNG</span><h1>Sự kiện & Hoạt động</h1><p>Khám phá các loại hình sự kiện văn hóa, hoạt động cộng đồng và gợi ý cách tìm thông tin lịch tổ chức chính thức.</p></div><div class="editorial-grid" id="eventsGrid"></div><p class="editorial-note">Lịch trong bản mẫu là gợi ý chủ đề, không phải xác nhận sự kiện đang diễn ra. Hãy kiểm tra trang của đơn vị tổ chức trước khi đi.</p></section>
+      <section class="page editorial-page" id="page-article" data-page="article"><div id="articleDetail"></div></section>
+      <section class="page" id="page-auth" data-page="auth">
+        <div class="auth-wrap"><div class="auth-art"><div class="brand large"><img class="brand-logo" src="assets/vietism-logo.png" alt="VIEST – Gìn giữ bản sắc Việt và lan tỏa giá trị yêu nước"></div><h2>Gìn giữ bản sắc Việt<br><em>Lan tỏa giá trị yêu nước</em></h2><p>Mỗi hành trình khám phá là một cách để thêm yêu đất nước.</p></div><div class="auth-card"><div class="auth-tabs"><button class="auth-tab active" data-auth="login">Đăng nhập</button><button class="auth-tab" data-auth="register">Đăng ký</button></div><form id="authForm"><label>Email<input type="email" autocomplete="email" required placeholder="Nhập email của bạn"></label><label id="nameField" class="hidden">Họ và tên<input type="text" autocomplete="name" placeholder="Tên hiển thị"></label><label>Mật khẩu<input type="password" autocomplete="current-password" minlength="6" required placeholder="Ít nhất 6 ký tự"></label><label class="remember"><input type="checkbox" id="rememberAuth" checked> Ghi nhớ đăng nhập <button type="button" class="link-button" id="forgotPassword">Quên mật khẩu?</button></label><button class="btn btn-gold full" id="authSubmit">Đăng nhập</button><p class="form-message" id="authMessage" role="status" aria-live="polite"></p><button type="button" class="link-button hidden" id="resendConfirmation">Gửi lại email xác nhận</button><div class="auth-divider">Hoặc tiếp tục khám phá</div><button type="button" class="btn btn-outline full" id="guestBtn">Tiếp tục không cần tài khoản</button></form><small class="muted auth-help">Chỉ tài khoản đã đăng ký mới đăng nhập được. Nếu chưa có tài khoản, chọn <b>Đăng ký</b>; nếu vừa đăng ký, hãy xác nhận email trước. Quên mật khẩu? Nhập email rồi chọn liên kết đặt lại.</small><p id="authConnectionStatus" class="auth-connection" role="status">Đang kiểm tra kết nối đăng nhập…</p></div></div>
+      </section>
+
+      <section class="page" id="page-profile" data-page="profile">
+        <div class="profile-hero"><div><span class="eyebrow">GÓC CỦA BẠN · VIEST</span><h1>Hồ sơ khám phá</h1><p>Lưu lại những câu chuyện bạn yêu thích và tiếp tục hành trình bất cứ lúc nào.</p></div><button class="btn btn-outline" id="signOutButton" type="button">Đăng xuất</button></div>
+        <div class="profile-overview"><div class="profile-avatar" id="profileAvatar">V</div><div><span class="eyebrow">THÀNH VIÊN VIEST</span><h2 id="profileName">Đang tải hồ sơ…</h2><p id="profileEmail" class="muted"></p></div><div class="profile-stat"><strong id="savedArticleCount">—</strong><span>bài viết đã lưu</span></div></div>
+        <section class="profile-saved-section"><div class="section-top"><div><span class="eyebrow">THƯ VIỆN CÁ NHÂN</span><h2>Bài viết đã lưu</h2></div><a class="btn btn-outline" href="#culture">Khám phá thêm →</a></div><div id="profileMessage" class="profile-message" role="status"></div><div id="savedArticlesGrid" class="editorial-grid"></div></section>
+      </section>
+
+      <section class="page" id="page-admin" data-page="admin">
+        <div class="admin-layout"><aside class="admin-sidebar"><div class="brand"><img class="brand-logo admin-logo" src="assets/vietism-logo.png" alt="VIEST"></div><a class="active" href="#admin">▦ Tổng quan</a><a href="#heritage">◈ Di sản</a><a href="#heroes">♙ Nhân vật</a><a href="#community">▤ Bài viết</a><a href="#members">♧ Thành viên</a><a href="#home">⚙ Cài đặt</a></aside><div class="admin-content"><div class="admin-title"><div><span class="eyebrow">KHU VỰC QUẢN TRỊ</span><h1>Tổng quan</h1></div><span class="admin-user">● Quản trị viên</span></div>        <div class="admin-stats"><div><span>Tổng lượt truy cập</span><strong id="adminVisitors">—</strong><small>↗ Dữ liệu backend</small></div><div><span>Địa danh</span><strong id="adminPlaces">20</strong><small>Trong danh mục nội dung</small></div><div><span>Đánh giá</span><strong id="adminReviews">—</strong><small>Dữ liệu Supabase</small></div><div><span>Bài viết cộng đồng</span><strong id="adminPosts">—</strong><small>Dữ liệu Supabase</small></div></div><div class="admin-panels"><div class="panel"><h3>Thống kê truy cập</h3><div class="bar-chart"><i style="height:32%"></i><i style="height:48%"></i><i style="height:40%"></i><i style="height:65%"></i><i style="height:58%"></i><i style="height:82%"></i><i style="height:72%"></i><i style="height:95%"></i><i style="height:80%"></i><i style="height:100%"></i></div><div class="chart-labels"><span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span></div></div><div class="panel"><h3>Phân loại nội dung</h3><div class="donut"><span>VIEST<small>Nội dung</small></span></div><div class="legend-list"><span>● Di sản</span><span>● Lịch sử</span><span>● Văn hóa</span></div></div></div><p class="muted">Dữ liệu quản trị được tải từ backend khi cấu hình Supabase. Chỉ tài khoản được cấp quyền admin mới được xem dữ liệu quản trị. Nhân vật lịch sử: <strong id="adminHeroes">—</strong>. Tổng phản hồi: <strong id="adminFeedback">—</strong>.</p></div></div>
+      </section>
+    </main>
+
+    <footer class="footer"><a class="brand" href="#home"><img class="brand-logo" src="assets/vietism-logo.png" alt="VIEST – Gìn giữ bản sắc Việt và lan tỏa giá trị yêu nước"></a><span>Khám phá Việt Nam · Kết nối quá khứ và hiện tại</span><div><a href="#history">Lịch sử</a><a href="#culture">Văn hóa</a><a href="#travel">Trải nghiệm</a><a href="#quest">Săn kho báu</a><a href="#community">Cộng đồng</a></div><em>“Việt Nam – Đất nước của những câu chuyện đẹp.”</em></footer>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
